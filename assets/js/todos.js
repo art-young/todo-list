@@ -21,6 +21,19 @@ $("input[type='text']").keypress(function(event){
     var todoText = $(this).val();
     $(this).val("");
     // Create a new li and add to ul
-    $("ul").append("<li><span>X</span> " + todoText + "</li>");
+    $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>");
   }
+});
+
+// Fade input in and out and switch plus to minus
+$(".fa-plus").on("click", function(){
+  $("input[type='text']").fadeIn();
+  $(".fa-plus").hide();
+  $(".fa-minus").show();
+});
+
+$(".fa-minus").on("click", function(){
+  $("input[type='text']").fadeOut();
+  $(".fa-plus").show();
+  $(".fa-minus").hide();
 });
