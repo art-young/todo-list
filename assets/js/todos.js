@@ -37,3 +37,9 @@ $(".fa-minus").on("click", function(){
   $(".fa-plus").show();
   $(".fa-minus").hide();
 });
+
+// jQuery UI make list sortable
+$(function() {
+  $( "#sortable" ).sortable();
+  $( "#sortable" ).disableSelection();
+});

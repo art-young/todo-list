@@ -5,7 +5,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/todos.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -13,10 +14,11 @@
     <h1><i class="fa fa-list" aria-hidden="true"></i> To-do List <i class="fa fa-plus" style="display: none"></i><i class="fa fa-minus"></i></h1>
     <input type="text" placeholder="Add New Todo">
 
-    <ul>
-      <li><span><i class="fa fa-trash"></i></span> Eat Breakfast</li>
-      <li><span><i class="fa fa-trash"></i></span> Go to Gym</li>
-      <li><span><i class="fa fa-trash"></i></span> Commit Code</li>
+    <ul id="sortable">
+      <li><span><i class="fa fa-trash"></i></span> Make coffee</li>
+      <li><span><i class="fa fa-trash"></i></span> Eat breakfast</li>
+      <li><span><i class="fa fa-trash"></i></span> Commit code</li>
+      <li><span><i class="fa fa-trash"></i></span> Declare victory</li>
     </ul>
   </div>
 
